@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast notification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/08cd55acef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="btns">
+        <button onclick="show(succesfully)">Succesfully</button>
+        <button onclick="show(error)">Error</button>
+        <button onclick="show(invalid)">Invalid</button>
+    </div>
+    <div class="toastParent">
+    </div>
+
+
+    <script>
+       let toastP = document.getElementsByClassName("toastParent")[0];
+       let succesfully = "<i class='fa-solid fa-square-check'></i> Successfully Submitted";
+       let invalid = "<i class='fa-solid fa-circle-exclamation'></i> Please enter valid";
+       let error = "<i class='fa-solid fa-square-xmark'></i> Please check error and try again";
+    function show(msg){
+      let div = document.createElement("div");
+      div.classList.add("toast");
+      div.innerHTML = msg;
+      toastP.appendChild(div);
+
+      if(msg.includes('Successfully')){
+        div.classList.add("succes")
+      }
+      
+      if(msg.includes('valid')){
+        div.classList.add("valid")
+      }
+      if(msg.includes('error')){
+        div.classList.add("error")
+      }
+      setTimeout(()=>{
+        div.remove()
+    },6000)
+     
+      div.addEventListener("click",()=>{
+         div.remove()
+      })
+
+    }
+
+   
+    
+    </script>
+</body>
+</html>

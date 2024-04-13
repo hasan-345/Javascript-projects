@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Scissor Paper</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+        body{
+            background-color: black;
+        }
+        *{
+             font-family: 'Lato', sans-serif;
+        }
+        .choice img{
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 200px;
+            border: 4px solid transparent;
+            transition: 0.3s;
+        }
+        .choice img:active{
+            border: 4px solid #1e1e78;
+            transform: scale(0.9);
+        }
+        h1{
+            background-color: #1e1e78;
+            text-align: center;
+            margin: 0;
+            padding: 20px 10px;
+            color: white;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .choices{
+            margin-top: 50px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .scoreboard{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .scoreboard p{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0;
+            color: white;
+          
+        }
+         .p{
+            padding: 10px 20px;
+            background-color: #1e1e78;
+            border-radius: 10px;
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+        .msg{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #newga{
+            text-align: center;
+        }
+        #newgame{
+            border: none;
+            box-shadow: 0 0 3px black;
+            margin-bottom: 50px
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="scissor"><img src="images/scissor.jpg" alt=""></div>
+        <div class="choice" id="paper"><img src="images/paper.png" alt=""></div>
+        <div class="choice" id="rock"><img src="images/rock.png" alt=""></div>
+    </div>
+    <div class="scoreboard">
+        <div class="score"><p id="you-score">0</p><p>You</p></div>
+        <div class="score"><p id="comp-score">0</p><p>Comp</p></div>
+    </div>
+    <div class="msg">
+        <p class="p" id="content">Play your move</p>
+    </div>
+  <div id="newga">  <button  id="newgame" class="p">
+
+  New game</button></div>
+    <script src="app.js"></script>
+</body>
+</html>

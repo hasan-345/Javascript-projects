@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+}
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+   padding: 20px 10px;
+   margin-bottom: 10px;
+   font-weight: bolder;
+   color: rgb(24, 24, 24);
+}
+.container{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    margin: 20px;
+    width: 400px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.display{
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    padding: 0px 15px;
+    padding-right: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgba(159, 159, 159, 0.287);
+}
+#NewBtn{
+    margin-top: 20px;
+}
+#btn{
+    margin-left: 5px;
+}
+#btn,.btn{
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 20px;
+    border: none;
+    background-color: #0c40cf;
+    color: white;
+    font-weight: bold;
+}
+ul li{
+    list-style-type: none;
+    color: black;
+    font-weight: bold;
+    margin: 20px;
+    position: relative;
+    padding-left: 10px;
+
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image:url("unchecked.png") ;
+    background-size: cover;
+    left: -25px;
+    top: -3px;
+    margin-right: 10px;
+}
+/* li.checked{
+    text-decoration: line-through;
+} */
+li.checked::before{
+    content: "";
+    background-image: url("checked.png");
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+#newBtn{
+    margin: 10px 0;
+}
+.hid{
+    display: none;
+}
+ul li span{
+    cursor: pointer;
+    font-size: 20px;
+   width: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;  
+}
+span:hover{
+    background-color: rgba(159, 159, 159, 0.287) ;
+}
+li.add{
+    /* text-decoration: line-through; */
+     user-select: none;
+}
+li.add::before{
+    content: "";
+    background-image: url("checked.png");
+}
+@media  screen and (max-width) {
+      .container{
+        width: auto !important;
+      }
+}

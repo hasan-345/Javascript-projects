@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #c94b4b, #4b134f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    padding: 20px 0;
+}
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.btns{
+    display: grid;
+    gap: 10px;
+    padding: 20px 0;
+}
+.btn,#next{
+    text-align: left;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.386);
+   transition: 0.3s;
+   color: black;
+}
+.btn:hover{
+    background: #0f0c29;
+    color: white;
+}
+#next{
+    background: #0f0c29;
+    color: white;
+    padding: 10px 30px;
+    display: none;
+}
+.correct{
+    background-color: #9aeabc;
+}
+.Incorrect{
+    background-color: #ff9393;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: "Fredoka", sans-serif;
+    color: white;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+.field{
+    width: 300px;
+    height: 300px;
+}
+body{
+    padding: 0;
+    background: linear-gradient(to right, #000428, #004e92);
+    margin: 0;
+}
+
+.max-width{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Fredoka", sans-serif;
+  }
+  
+  .btn {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    box-shadow: 0 20px 30px -6px rgb(25, 37, 40);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: white;
+
+  }
+  
+  .btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    opacity: 0.5;
+  }
+  .allbtns{
+    display: flex;
+    gap: 10px;
+    padding:20px 0;
+    flex-wrap: wrap;
+  }
+  input::file-selector-button{
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    margin-right: 5px;
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+  }
+  .pimages{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bgimages{
+    display: flex;
+  }
+  .bgimages img{
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.287);
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 100%;
+    
+  }
+  @media screen and (max-width:500px) {
+   .bgimages{
+    width: 90%;
+   }
+    .bgimages img{
+        width: 100%;
+    }
+  }
+  

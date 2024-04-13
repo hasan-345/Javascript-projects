@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+        body{
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background:black;
+        }
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 50px;
+         
+        }
+        .game{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            place-items: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgba(255, 255, 255, 0.373);
+            box-shadow: 1px 0.9px 3px black;
+            border-radius: 3px;
+            margin: 3px;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            line-height: 4;
+            font-family: 'Lato', sans-serif;
+            border: 1px solid black;
+           font-weight: bold;
+           color: white;
+           transition: 0.3s;
+        }
+        .box:active{
+             transform: scale(0.9);
+        }
+
+        .winer{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        #winner{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+            color: white;
+        }
+        .btn:active{
+            transform: scale(0.9);
+        }
+        .btn{
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+           background-color: #1e1e78;
+            color: white;
+            box-shadow: 0 0 2px black;
+            font-family: 'Lato', sans-serif;
+            transition: 0.3s;
+        }
+       
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lato', sans-serif;
+        }
+      
+        .button{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+        }
+        .hide{
+            display: none;
+        }
+        h1{
+            font-size: 30px;
+            color: white;
+            text-shadow: 0 0 2px black;
+            font-weight: bold;
+            text-align: center;
+        }
+        .inst{
+            color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+        }
+        #x,#O{
+            margin: 5px;
+        }
+        .design{
+            background-color:#1e1e78;
+        }
+        a{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        @media screen and (max-width:360px) {
+            .box{
+                height: 70px;
+                width: 70px;
+                line-height: 2;
+            }
+        }
+        .rock{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .rock a{
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Tic Tac Toe</h1>
+    <p class="inst">X & O players in this game <br> There are two players</p>
+    <div class="btnstwo" align=" center"><button id="x"  class="btn xo">X</button><button  class="btn xo" id="O">O</button></div>
+    <div class="winer hide">
+        <p id="winner"></p>
+     <div>   <button id="newgame" class="btn">New game</button></div>
+    </div>
+     
+     
+    <div class="container">
+        <div class="p">
+        <div class="game">
+           <button class="box"></button><button class="box"></button><button class="box"></button><button class="box"></button><button class="box"></button><button class="box"></button><button class="box"></button><button class="box"></button><button class="box"></button>
+        </div>
+     <div class="button">  <button id="reset" class="btn">Reset</button></div> 
+    </div>
+    </div>
+    <div class="rock"><button class="btn"><a target="_blank" href="sci.html">Game</a></button></div>
+    <script src="script.js"></script>
+</body>
+</html>

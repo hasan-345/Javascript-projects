@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inria Sans", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #262a2f;
+    padding: 20px;
+    
+
+}
+.max_width{
+display: flex;
+justify-content: center;
+}
+.cont{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+   width: 600px;
+}
+p{
+    font-weight: bold;
+}
+.cont input{
+    padding: 10px 10px;
+    width: 100%;
+    margin: 20px 0;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.568);
+    border-radius: 5px;
+}
+.cont input::placeholder{
+    font-weight:bold ;
+}
+.cont button{
+    width: 100%;
+    padding: 10px;
+    background-color:#494eea ;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#imgdiv{
+  text-align: center;
+  padding: 10px 0;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#imgdiv.show-qr{
+    max-height: 1000px;
+   
+}

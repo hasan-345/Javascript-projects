@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto+Condensed:wght@400;500&display=swap');
+body{
+    background-image: linear-gradient(to right, #1c0435 0%, #0a295e 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h1,h2{
+    color: rgba(255, 255, 255, 0.965);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 0 0 1px black;
+}
+h2{
+    border-bottom: 3px solid #019f55;
+    width: fit-content;
+    padding: 5px 0;
+    color: #019f55;
+}
+.container{
+    margin: 10px;
+    margin-top: 30px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    word-spacing: 2px;
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+.display{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+.display img{
+   height: 20px;
+}
+button{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #019f55;
+    border: none;
+    font-size: 17px;
+    color: white;
+    font-weight: lighter;
+    word-spacing: 2px;
+    border-radius: 5px;
+    margin: 10px 0;
+    outline: 3px solid;
+    outline-color: transparent;
+    transition: 0.2s;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.552);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+button:active{
+    outline-color: #019f55;
+    outline-offset: 2px;
+}
+button img{
+    height: 20px;
+    margin-right:10px ;
+}
